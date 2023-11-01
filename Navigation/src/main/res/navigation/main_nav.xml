@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/ticketFragment">
+
+    <fragment
+        android:id="@+id/ticketFragment"
+        android:name="com.freehugs.navigationbar.TicketFragment"
+        android:label="fragment_ticket"
+        tools:layout="@layout/fragment_ticket" >
+        <action
+            android:id="@+id/action_ticketFragment_to_musicworkFragment"
+            app:destination="@id/musicworkFragment" />
+        <action
+            android:id="@+id/action_ticketFragment_to_scheduleFragment"
+            app:destination="@id/scheduleFragment" />
+        <action
+            android:id="@+id/action_ticketFragment_to_dataFragment"
+            app:destination="@id/dataFragment" />
+        <action
+            android:id="@+id/action_ticketFragment_to_mypageFragment"
+            app:destination="@id/mypageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/musicworkFragment"
+        android:name="com.freehugs.navigationbar.MusicworkFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_musicwork" />
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.freehugs.navigationbar.ScheduleFragment"
+        android:label="fragment_schedule"
+        tools:layout="@layout/fragment_schedule" />
+    <fragment
+        android:id="@+id/dataFragment"
+        android:name="com.freehugs.navigationbar.DataFragment"
+        android:label="fragment_data"
+        tools:layout="@layout/fragment_data" />
+    <fragment
+        android:id="@+id/mypageFragment"
+        android:name="com.freehugs.navigationbar.MypageFragment"
+        android:label="fragment_mypage"
+        tools:layout="@layout/fragment_mypage" />
+</navigation>
