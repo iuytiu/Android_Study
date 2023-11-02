@@ -10,7 +10,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/Navigation" />
+            <option value="$PROJECT_DIR$/Navigation1" />
             <option value="$PROJECT_DIR$/RecyclerView" />
           </set>
         </option>

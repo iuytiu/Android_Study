@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Android_Study"
 include(":RecyclerView")
-include(":Navigation")
+include(":Navigation1")

@@ -28,7 +28,7 @@
                 android:layout_columnWeight="1"
                 android:layout_marginTop="7dp"
                 android:background="@color/black"
-                android:drawableTop="@drawable/image"
+                android:drawableTop="@drawable/ic_musicwork"
                 android:textColor="@color/white"
                 android:text="뮤직워크"
                 android:textSize="12sp" />
@@ -39,7 +39,7 @@
                 android:layout_columnWeight="1"
                 android:layout_marginTop="7dp"
                 android:background="@color/black"
-                android:drawableTop="@drawable/image"
+                android:drawableTop="@drawable/ic_calendar"
                 android:textColor="@color/white"
                 android:text="일정"
                 android:textSize="12sp"/>
@@ -51,7 +51,7 @@
                 android:layout_columnWeight="1"
                 android:layout_marginTop="7dp"
                 android:background="@color/black"
-                android:drawableTop="@drawable/image"
+                android:drawableTop="@drawable/ic_ticket"
                 android:textColor="@color/white"
                 android:text="티켓"
                 android:textSize="12sp" />
@@ -63,7 +63,7 @@
                 android:layout_columnWeight="1"
                 android:layout_marginTop="7dp"
                 android:background="@color/black"
-                android:drawableTop="@drawable/image"
+                android:drawableTop="@drawable/ic_data"
                 android:textColor="@color/white"
                 android:text="데이터"
                 android:textSize="12sp" />
@@ -76,7 +76,7 @@
                 android:layout_marginTop="7dp"
                 android:background="@color/black"
                 android:textColor="@color/white"
-                android:drawableTop="@drawable/image"
+                android:drawableTop="@drawable/ic_mypage"
                 android:text="마이페이지"
                 android:textSize="12sp" />
         </GridLayout>

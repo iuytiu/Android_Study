@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/ticketFragment">
+
+    <!-- Musicwork 페이지에서의 이동 -->
+    <fragment
+        android:id="@+id/musicworkFragment"
+        android:name="com.freehugs.navigationbar.MusicworkFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_musicwork" >
+        <action
+            android:id="@+id/action_musicworkFragment_to_scheduleFragment"
+            app:destination="@id/scheduleFragment" />
+        <action
+            android:id="@+id/action_musicworkFragment_to_ticketFragment"
+            app:destination="@id/ticketFragment" />
+        <action
+            android:id="@+id/action_musicworkFragment_to_dataFragment"
+            app:destination="@id/dataFragment" />
+        <action
+            android:id="@+id/action_musicworkFragment_to_mypageFragment"
+            app:destination="@id/mypageFragment" />
+    </fragment>
+
+    <!-- Schedule 페이지에서의 이동 -->
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.freehugs.navigationbar.ScheduleFragment"
+        android:label="fragment_schedule"
+        tools:layout="@layout/fragment_schedule" >
+        <action
+            android:id="@+id/action_scheduleFragment_to_musicworkFragment"
+            app:destination="@id/musicworkFragment" />
+        <action
+            android:id="@+id/action_scheduleFragment_to_ticketFragment"
+            app:destination="@id/ticketFragment" />
+        <action
+            android:id="@+id/action_scheduleFragment_to_dataFragment"
+            app:destination="@id/dataFragment" />
+        <action
+            android:id="@+id/action_scheduleFragment_to_mypageFragment"
+            app:destination="@id/mypageFragment" />
+    </fragment>
+
+    <!-- Ticket 페이지에서의 이동 -->
+    <fragment
+        android:id="@+id/ticketFragment"
+        android:name="com.freehugs.navigationbar.TicketFragment"
+        android:label="fragment_ticket"
+        tools:layout="@layout/fragment_ticket" >
+        <action
+            android:id="@+id/action_ticketFragment_to_musicworkFragment"
+            app:destination="@id/musicworkFragment" />
+        <action
+            android:id="@+id/action_ticketFragment_to_scheduleFragment"
+            app:destination="@id/scheduleFragment" />
+        <action
+            android:id="@+id/action_ticketFragment_to_dataFragment"
+            app:destination="@id/dataFragment" />
+        <action
+            android:id="@+id/action_ticketFragment_to_mypageFragment"
+            app:destination="@id/mypageFragment" />
+    </fragment>
+
+    <!-- Data 페이지에서의 이동 -->
+    <fragment
+        android:id="@+id/dataFragment"
+        android:name="com.freehugs.navigationbar.DataFragment"
+        android:label="fragment_data"
+        tools:layout="@layout/fragment_data" >
+        <action
+            android:id="@+id/action_dataFragment_to_musicworkFragment"
+            app:destination="@id/musicworkFragment" />
+        <action
+            android:id="@+id/action_dataFragment_to_scheduleFragment"
+            app:destination="@id/scheduleFragment" />
+        <action
+            android:id="@+id/action_dataFragment_to_ticketFragment"
+            app:destination="@id/ticketFragment" />
+        <action
+            android:id="@+id/action_dataFragment_to_mypageFragment"
+            app:destination="@id/mypageFragment" />
+    </fragment>
+
+    <!-- Mypage에서의 이동 -->
+    <fragment
+        android:id="@+id/mypageFragment"
+        android:name="com.freehugs.navigationbar.MypageFragment"
+        android:label="fragment_mypage"
+        tools:layout="@layout/fragment_mypage" >
+        <action
+            android:id="@+id/action_mypageFragment_to_musicworkFragment"
+            app:destination="@id/musicworkFragment" />
+        <action
+            android:id="@+id/action_mypageFragment_to_scheduleFragment"
+            app:destination="@id/scheduleFragment" />
+        <action
+            android:id="@+id/action_mypageFragment_to_ticketFragment"
+            app:destination="@id/ticketFragment" />
+        <action
+            android:id="@+id/action_mypageFragment_to_dataFragment"
+            app:destination="@id/dataFragment" />
+    </fragment>
+</navigation>

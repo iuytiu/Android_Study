@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataFragment" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Data Fragement" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="650dp"
+        android:orientation="horizontal"
+        android:rowCount="1"
+        android:columnCount="5"
+        android:background="@color/black">
+
+        <Button
+            android:id="@+id/NavMusicworkBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="7dp"
+            android:background="@color/black"
+            android:drawableTop="@drawable/ic_musicwork"
+            android:textColor="@color/white"
+            android:text="뮤직워크"
+            android:textSize="12sp" />
+        <Button
+            android:id="@+id/NavScheduleBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="7dp"
+            android:background="@color/black"
+            android:drawableTop="@drawable/ic_calendar"
+            android:textColor="@color/white"
+            android:text="일정"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/NavTicketBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="7dp"
+            android:background="@color/black"
+            android:drawableTop="@drawable/ic_ticket"
+            android:textColor="@color/white"
+            android:text="티켓"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/NavDataBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="7dp"
+            android:background="@color/black"
+            android:drawableTop="@drawable/ic_data"
+            android:textColor="@color/white"
+            android:text="데이터"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/NavMypageBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="7dp"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:drawableTop="@drawable/ic_mypage"
+            android:text="마이페이지"
+            android:textSize="12sp" />
+    </GridLayout>
+</FrameLayout>
